@@ -5,7 +5,7 @@ const Home = () => {
   const [data, setData] = useState([]);
   return (
     <View>
-      <Text style={{color: 'black'}}>Home</Text>
+      <Text style={{color: 'black', fontFamily: 'Poppins-SemiBold'}}>Home</Text>
     </View>
   );
 };
