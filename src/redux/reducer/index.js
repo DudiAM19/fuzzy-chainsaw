@@ -1,17 +1,8 @@
-import {SET_DATA} from '../actions';
+import {combineReducers} from 'redux';
+import {appReducer} from './appReducer';
 
-const initialState = {
-  data: {},
-};
+const reducer = combineReducers({
+  appReducer,
+});
 
-export const appReducer = (state = initialState, {type, payload}) => {
-  switch (type) {
-    case SET_DATA:
-      return {
-        ...state,
-        data: payload,
-      };
-    default:
-      return state;
-  }
-};
+export default reducer;
